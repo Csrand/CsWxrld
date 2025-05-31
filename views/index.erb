@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>CsWxrld</title>
+  </head>
+  <body>
+
+    <header>
+      <h1>CsWxrld</h1>
+    </header>
+    <main>
+      <section>
+        <h2>Posts</h2>
+        <% @post.each do |post| %>
+          <article class = "post">
+            <header>
+              <h3><%= post[:title]%></h3>
+            </header>
+            <p><%= post[:content]%></p>
+          </article>
+        <% end %>
+      </section>
+    </main>
+    <footer>
+      <p>&copy; <%= Time.now.year %> Meu Blog </p>
+    </footer>
+  </body>
+</html>

@@ -1,6 +1,6 @@
 # Entity Relationship 
 
-```erDiagram
+```mermaid
     USER ||--o{ POST : interacts
     USER ||--||PROFILE : have
    
